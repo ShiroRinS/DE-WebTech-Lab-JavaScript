@@ -1,0 +1,14 @@
+<script>
+// Task 1: Toggle function for button
+function toggleMessage() {
+    const messageElement = document.getElementById("message");
+    if (messageElement.style.display === "none" || !messageElement.style.display) {
+        messageElement.style.display = "block";
+        messageElement.textContent = "Lab JavaScript";
+    } else {
+        messageElement.style.display = "none";
+    }
+}
+</script>
+<button onclick="toggleMessage()">Click Me</button>
+<div id="message" style="display: none;"></div>
